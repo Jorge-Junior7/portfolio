@@ -1,0 +1,14 @@
+*{
+ font-family: 'Roboto', sans-serif;
+ margin: 1%;
+ color: white;
+}
+
+.containner__menu{
+ background-color: black;
+}
+
+.menu__home{
+ float: left;
+ width: 100px;
+}
