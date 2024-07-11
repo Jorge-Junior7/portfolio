@@ -1,0 +1,227 @@
+/* Reseta margens, preenchimentos e configurações de box-sizing para todos os elementos */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Define variáveis CSS para uso em todo o documento */
+:root {
+    --bg-color: #000000;
+    --text-color: #383838;
+    --main-color: #fff;
+}
+
+/* Remove o estilo padrão da lista */
+li {
+    list-style-type: none;
+}
+
+/* Configurações básicas para o corpo do documento */
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Estilos para o cabeçalho fixo */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+}
+
+/* Estilos para o logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+}
+
+/* Estilos para os links da barra de navegação */
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 3px 0;
+    margin: 0px 40px;
+    transition: all 0.5s ease;
+}
+
+/* Efeito de hover nos links da barra de navegação */
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* Estilos para links ativos na barra de navegação */
+.navbar a:active {
+    color: var(--main-color);
+}
+
+/* Remove o estilo padrão da lista */
+li {
+    list-style-type: none;
+}
+
+/* Configurações básicas para o corpo do documento */
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Estilos para o cabeçalho fixo */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+}
+
+/* Estilos para o logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+}
+
+/* Estilos para os links da barra de navegação */
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 3px 0;
+    margin: 0px 40px;
+    transition: all 0.5s ease;
+}
+
+/* Efeito de hover nos links da barra de navegação */
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* Estilos para links ativos na barra de navegação */
+.navbar a:active {
+    color: var(--main-color);
+}
+
+/* Estilos para a seção principal */
+.main {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para os links na seção principal */
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #000000;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border: 10px solid #32cf02;
+    background-color: #32cf02;
+    border-radius: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    
+}
+
+/* Efeito de hover nos links da seção principal */
+.main a:hover {
+    color: var(--main-color);
+}
+
+
+/* Efeito de hover nos links da seção principal */
+.main a:hover {
+    color: var(--main-color);
+}
+
+
+
+/* Estilos para o ícone do menu */
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+/* Estilos responsivos para telas menores que 1280px */
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+/* Estilos responsivos para telas menores que 1090px */
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 35vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all 0.5s ease;
+    }
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.activer {
+        color: var(--text-color);
+    }
+    .navbar.open {
+        right: 2%;
+    }
+   
+}
